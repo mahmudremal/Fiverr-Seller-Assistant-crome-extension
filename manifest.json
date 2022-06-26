@@ -1,0 +1,47 @@
+{
+  "update_url": "https://clients2.google.com/service/update2/crx",
+  "manifest_version": 3,
+  "name": "Fiverr Assistant",
+  "description": "Fiverr Assistant tool for Seller helps you get buyer request details, notifications, hiding balance & much more",
+  "version": "1.0.1",
+  "background": {
+    "service_worker": "background/service_worker.js"
+  },
+  "action": {
+    "default_popup": "popup/index.html"
+  },
+  "icons": { 
+    "16": "assets/logo.png",
+    "48": "assets/logo.png",
+   "128": "assets/logo.png" 
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.fiverr.com/*"],
+      "js": ["assets/build/js/main.js"]
+    },
+    {
+      "matches": ["https://www.fiverr.com/users/*"],
+      "js": ["assets/build/js/users.js"],
+      "css": ["content/profilePopup.css"]
+    },
+    {
+      "matches": ["https://www.fiverr.com/inbox/*"],
+      "js": ["assets/build/js/inbox.js"],
+      "css": ["content/moneyCalculator.css"]
+    }
+  ],
+  "permissions": [
+    "storage",
+    "alarms",
+    "notifications",
+    "background"
+  ],
+  "host_permissions": [
+    "https://*/*",
+    "https://www.fiverr.com/*",
+    "https://fiverr.com/*",
+    "https://cdn0.forter.com/*",
+    "https://github.com/*"
+  ]
+}

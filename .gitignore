@@ -1,0 +1,11 @@
+node_modules
+assets/src
+.eslintignore
+.eslintrc.json
+.babelrc
+.nvmrc
+.stylelintrc.json
+hash.js
+package.json
+package-lock.json
+webpack.config.js
