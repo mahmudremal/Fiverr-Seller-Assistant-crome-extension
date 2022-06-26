@@ -5,7 +5,7 @@
   "description": "Fiverr Assistant tool for Seller helps you get buyer request details, notifications, hiding balance & much more",
   "version": "1.0.1",
   "background": {
-    "service_worker": "background/service_worker.js"
+    "service_worker": "assets/build/js/serviceWorker.js"
   },
   "action": {
     "default_popup": "popup/index.html"
@@ -17,18 +17,19 @@
   },
   "content_scripts": [
     {
-      "matches": ["https://www.fiverr.com/*"],
-      "js": ["assets/build/js/main.js"]
+      "matches": [ "https://www.fiverr.com/*" ],
+      "js": [ "assets/build/js/main.js" ],
+      "css": [ "assets/build/css/main.css" ]
     },
     {
-      "matches": ["https://www.fiverr.com/users/*"],
-      "js": ["assets/build/js/users.js"],
-      "css": ["content/profilePopup.css"]
+      "matches": [ "https://www.fiverr.com/users/*" ],
+      "js": [ "assets/build/js/users.js" ],
+      "css": [ "assets/build/css/users.css" ]
     },
     {
-      "matches": ["https://www.fiverr.com/inbox/*"],
-      "js": ["assets/build/js/inbox.js"],
-      "css": ["content/moneyCalculator.css"]
+      "matches": [ "https://www.fiverr.com/inbox/*" ],
+      "js": [ "assets/build/js/inbox.js" ],
+      "css": [ "assets/build/css/inbox.css" ]
     }
   ],
   "permissions": [
