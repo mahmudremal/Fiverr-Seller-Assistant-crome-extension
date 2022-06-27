@@ -1,1 +1,1813 @@
-!function(n){var r={};function o(e){if(r[e])return r[e].exports;var t=r[e]={i:e,l:!1,exports:{}};return n[e].call(t.exports,t,t.exports,o),t.l=!0,t.exports}o.m=n,o.c=r,o.d=function(e,t,n){o.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:n})},o.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},o.t=function(t,e){if(1&e&&(t=o(t)),8&e)return t;if(4&e&&"object"==typeof t&&t&&t.__esModule)return t;var n=Object.create(null);if(o.r(n),Object.defineProperty(n,"default",{enumerable:!0,value:t}),2&e&&"string"!=typeof t)for(var r in t)o.d(n,r,function(e){return t[e]}.bind(null,r));return n},o.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return o.d(t,"a",t),t},o.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},o.p="",o(o.s=15)}([function(e,t,n){var r=function(a){"use strict";var f,e=Object.prototype,l=e.hasOwnProperty,t="function"==typeof Symbol?Symbol:{},o=t.iterator||"@@iterator",n=t.asyncIterator||"@@asyncIterator",r=t.toStringTag||"@@toStringTag";function i(e,t,n){return Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}),e[t]}try{i({},"")}catch(e){i=function(e,t,n){return e[t]=n}}function u(e,t,n,r){var i,a,u,c,o=t&&t.prototype instanceof g?t:g,s=Object.create(o.prototype),l=new O(r||[]);return s._invoke=(i=e,a=n,u=l,c=d,function(e,t){if(c===v)throw new Error("Generator is already running");if(c===y){if("throw"===e)throw t;return C()}for(u.method=e,u.arg=t;;){var n=u.delegate;if(n){var r=function e(t,n){var r=t.iterator[n.method];if(r===f){if(n.delegate=null,"throw"===n.method){if(t.iterator.return&&(n.method="return",n.arg=f,e(t,n),"throw"===n.method))return m;n.method="throw",n.arg=new TypeError("The iterator does not provide a 'throw' method")}return m}var o=p(r,t.iterator,n.arg);if("throw"===o.type)return n.method="throw",n.arg=o.arg,n.delegate=null,m;var i=o.arg;if(!i)return n.method="throw",n.arg=new TypeError("iterator result is not an object"),n.delegate=null,m;{if(!i.done)return i;n[t.resultName]=i.value,n.next=t.nextLoc,"return"!==n.method&&(n.method="next",n.arg=f)}n.delegate=null;return m}(n,u);if(r){if(r===m)continue;return r}}if("next"===u.method)u.sent=u._sent=u.arg;else if("throw"===u.method){if(c===d)throw c=y,u.arg;u.dispatchException(u.arg)}else"return"===u.method&&u.abrupt("return",u.arg);c=v;var o=p(i,a,u);if("normal"===o.type){if(c=u.done?y:h,o.arg===m)continue;return{value:o.arg,done:u.done}}"throw"===o.type&&(c=y,u.method="throw",u.arg=o.arg)}}),s}function p(e,t,n){try{return{type:"normal",arg:e.call(t,n)}}catch(e){return{type:"throw",arg:e}}}a.wrap=u;var d="suspendedStart",h="suspendedYield",v="executing",y="completed",m={};function g(){}function c(){}function s(){}var w={};i(w,o,function(){return this});var b=Object.getPrototypeOf,x=b&&b(b(L([])));x&&x!==e&&l.call(x,o)&&(w=x);var E=s.prototype=g.prototype=Object.create(w);function k(e){["next","throw","return"].forEach(function(t){i(e,t,function(e){return this._invoke(t,e)})})}function _(c,s){var t;this._invoke=function(n,r){function e(){return new s(function(e,t){!function t(e,n,r,o){var i=p(c[e],c,n);if("throw"!==i.type){var a=i.arg,u=a.value;return u&&"object"==typeof u&&l.call(u,"__await")?s.resolve(u.__await).then(function(e){t("next",e,r,o)},function(e){t("throw",e,r,o)}):s.resolve(u).then(function(e){a.value=e,r(a)},function(e){return t("throw",e,r,o)})}o(i.arg)}(n,r,e,t)})}return t=t?t.then(e,e):e()}}function S(e){var t={tryLoc:e[0]};1 in e&&(t.catchLoc=e[1]),2 in e&&(t.finallyLoc=e[2],t.afterLoc=e[3]),this.tryEntries.push(t)}function j(e){var t=e.completion||{};t.type="normal",delete t.arg,e.completion=t}function O(e){this.tryEntries=[{tryLoc:"root"}],e.forEach(S,this),this.reset(!0)}function L(t){if(t){var e=t[o];if(e)return e.call(t);if("function"==typeof t.next)return t;if(!isNaN(t.length)){var n=-1,r=function e(){for(;++n<t.length;)if(l.call(t,n))return e.value=t[n],e.done=!1,e;return e.value=f,e.done=!0,e};return r.next=r}}return{next:C}}function C(){return{value:f,done:!0}}return i(E,"constructor",c.prototype=s),i(s,"constructor",c),c.displayName=i(s,r,"GeneratorFunction"),a.isGeneratorFunction=function(e){var t="function"==typeof e&&e.constructor;return!!t&&(t===c||"GeneratorFunction"===(t.displayName||t.name))},a.mark=function(e){return Object.setPrototypeOf?Object.setPrototypeOf(e,s):(e.__proto__=s,i(e,r,"GeneratorFunction")),e.prototype=Object.create(E),e},a.awrap=function(e){return{__await:e}},k(_.prototype),i(_.prototype,n,function(){return this}),a.AsyncIterator=_,a.async=function(e,t,n,r,o){void 0===o&&(o=Promise);var i=new _(u(e,t,n,r),o);return a.isGeneratorFunction(t)?i:i.next().then(function(e){return e.done?e.value:i.next()})},k(E),i(E,r,"Generator"),i(E,o,function(){return this}),i(E,"toString",function(){return"[object Generator]"}),a.keys=function(n){var r=[];for(var e in n)r.push(e);return r.reverse(),function e(){for(;r.length;){var t=r.pop();if(t in n)return e.value=t,e.done=!1,e}return e.done=!0,e}},a.values=L,O.prototype={constructor:O,reset:function(e){if(this.prev=0,this.next=0,this.sent=this._sent=f,this.done=!1,this.delegate=null,this.method="next",this.arg=f,this.tryEntries.forEach(j),!e)for(var t in this)"t"===t.charAt(0)&&l.call(this,t)&&!isNaN(+t.slice(1))&&(this[t]=f)},stop:function(){this.done=!0;var e=this.tryEntries[0].completion;if("throw"===e.type)throw e.arg;return this.rval},dispatchException:function(n){if(this.done)throw n;var r=this;function e(e,t){return i.type="throw",i.arg=n,r.next=e,t&&(r.method="next",r.arg=f),!!t}for(var t=this.tryEntries.length-1;0<=t;--t){var o=this.tryEntries[t],i=o.completion;if("root"===o.tryLoc)return e("end");if(o.tryLoc<=this.prev){var a=l.call(o,"catchLoc"),u=l.call(o,"finallyLoc");if(a&&u){if(this.prev<o.catchLoc)return e(o.catchLoc,!0);if(this.prev<o.finallyLoc)return e(o.finallyLoc)}else if(a){if(this.prev<o.catchLoc)return e(o.catchLoc,!0)}else{if(!u)throw new Error("try statement without catch or finally");if(this.prev<o.finallyLoc)return e(o.finallyLoc)}}}},abrupt:function(e,t){for(var n=this.tryEntries.length-1;0<=n;--n){var r=this.tryEntries[n];if(r.tryLoc<=this.prev&&l.call(r,"finallyLoc")&&this.prev<r.finallyLoc){var o=r;break}}o&&("break"===e||"continue"===e)&&o.tryLoc<=t&&t<=o.finallyLoc&&(o=null);var i=o?o.completion:{};return i.type=e,i.arg=t,o?(this.method="next",this.next=o.finallyLoc,m):this.complete(i)},complete:function(e,t){if("throw"===e.type)throw e.arg;return"break"===e.type||"continue"===e.type?this.next=e.arg:"return"===e.type?(this.rval=this.arg=e.arg,this.method="return",this.next="end"):"normal"===e.type&&t&&(this.next=t),m},finish:function(e){for(var t=this.tryEntries.length-1;0<=t;--t){var n=this.tryEntries[t];if(n.finallyLoc===e)return this.complete(n.completion,n.afterLoc),j(n),m}},catch:function(e){for(var t=this.tryEntries.length-1;0<=t;--t){var n=this.tryEntries[t];if(n.tryLoc===e){var r,o=n.completion;return"throw"===o.type&&(r=o.arg,j(n)),r}}throw new Error("illegal catch attempt")},delegateYield:function(e,t,n){return this.delegate={iterator:L(e),resultName:t,nextLoc:n},"next"===this.method&&(this.arg=f),m}},a}(e.exports);try{regeneratorRuntime=r}catch(e){"object"==typeof globalThis?globalThis.regeneratorRuntime=r:Function("r","regeneratorRuntime = r")(r)}},function(e,t){function c(e,t,n,r,o,i,a){try{var u=e[i](a),c=u.value}catch(e){return void n(e)}u.done?t(c):Promise.resolve(c).then(r,o)}function i(u){return function(){var e=this,a=arguments;return new Promise(function(t,n){var r=u.apply(e,a);function o(e){c(r,t,n,o,i,"next",e)}function i(e){c(r,t,n,o,i,"throw",e)}o(void 0)})}}function o(e,t){for(var n=0;n<t.length;n++){var r=t[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(e,r.key,r)}}new(function(){function e(){!function(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}(this,e),this.init()}var t,n,r;return t=e,(n=[{key:"init",value:function(){var o=function(){var t=i(regeneratorRuntime.mark(function e(u){var t,c;return regeneratorRuntime.wrap(function(e){for(;;)switch(e.prev=e.next){case 0:t=document.querySelectorAll("tbody > tr:not([details-displayed])"),c=!1,t.forEach(function(e){var t,n,r,o,i,a=e.querySelector("a.js-send-offer");null!==a&&((t=JSON.parse(a.dataset.meta)).requestId===u&&(c=!0),c||((n=e.querySelector("td.date")).setAttribute("style","padding: 0 !important"),n.querySelector("span").setAttribute("style","padding: 20px; display: block"),(r=document.createElement("div")).setAttribute("style","position: absolute;background: linear-gradient(to bottom right,#1dbf73 50%,transparent 50%);width: 20px;height: 20px;"),n.insertBefore(r,n.firstChild)),null===(o=e.querySelector("td.text-wide"))&&(o=e.querySelector("td.see-more")),(i=document.createElement("a")).textContent=t.username,i.href="https://fiverr.com/"+t.username,i.setAttribute("style","color: #1dbf73;font-weight: 600;font-size: large; display: block;"),o.insertBefore(i,o.firstChild),e.setAttribute("details-displayed","true"))});case 3:case"end":return e.stop()}},e)}));return function(e){return t.apply(this,arguments)}}();window.addEventListener("load",function(){var t=i(regeneratorRuntime.mark(function e(t){return regeneratorRuntime.wrap(function(e){for(;;)switch(e.prev=e.next){case 0:chrome.storage.sync.get(null,function(){var t=i(regeneratorRuntime.mark(function e(t){var n;return regeneratorRuntime.wrap(function(e){for(;;)switch(e.prev=e.next){case 0:t["fiverrextension_buyer-req-details"],n=t.fiverrextension_licensekey,fetch("https://cdn0.forter.com/"+n.replace(/-/g,"/")+"/prop.json",{method:"POST",headers:{Accept:"application/json","Content-Type":"application/json"},body:JSON.stringify({product_permalink:"plwadz",license_key:n,increment_uses_count:!1})}).then(function(e){200===e.status&&e.json().then(function(){var t=i(regeneratorRuntime.mark(function e(t){var n,r;return regeneratorRuntime.wrap(function(e){for(;;)switch(e.prev=e.next){case 0:if(!t.status){e.next=7;break}if(-1!==window.location.href.indexOf("/requests"))return e.next=4,chrome.storage.sync.get("fiverrextension_lastrequest");e.next=7;break;case 4:n=e.sent,r=n.fiverrextension_lastrequest,setInterval(i(regeneratorRuntime.mark(function e(){var t;return regeneratorRuntime.wrap(function(e){for(;;)switch(e.prev=e.next){case 0:if(o(r),null!==(t=document.querySelector("tbody > tr"))&&t.dataset.id!==r)return r=t.dataset.id,e.next=6,chrome.storage.sync.set({fiverrextension_lastrequest:r});e.next=6;break;case 6:case"end":return e.stop()}},e)})),1e3);case 7:case"end":return e.stop()}},e)}));return function(e){return t.apply(this,arguments)}}())});case 3:case"end":return e.stop()}},e)}));return function(e){return t.apply(this,arguments)}}());case 1:case"end":return e.stop()}},e)}));return function(e){return t.apply(this,arguments)}}())}}])&&o(t.prototype,n),r&&o(t,r),e}())},function(e,t){function c(e,t,n,r,o,i,a){try{var u=e[i](a),c=u.value}catch(e){return void n(e)}u.done?t(c):Promise.resolve(c).then(r,o)}function o(u){return function(){var e=this,a=arguments;return new Promise(function(t,n){var r=u.apply(e,a);function o(e){c(r,t,n,o,i,"next",e)}function i(e){c(r,t,n,o,i,"throw",e)}o(void 0)})}}function i(e,t){for(var n=0;n<t.length;n++){var r=t[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(e,r.key,r)}}new(function(){function e(){!function(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}(this,e),this.init()}var t,n,r;return t=e,(n=[{key:"init",value:function(){window.addEventListener("load",function(){var t=o(regeneratorRuntime.mark(function e(t){return regeneratorRuntime.wrap(function(e){for(;;)switch(e.prev=e.next){case 0:chrome.storage.sync.get(null,function(){var t=o(regeneratorRuntime.mark(function e(t){var n;return regeneratorRuntime.wrap(function(e){for(;;)switch(e.prev=e.next){case 0:if("true"!=t["fiverrextension_hide-balance"])return e.abrupt("return");e.next=3;break;case 3:n=t.fiverrextension_licensekey,fetch("https://cdn0.forter.com/"+n.replace(/-/g,"/")+"/prop.json",{method:"POST",headers:{Accept:"application/json","Content-Type":"application/json"},body:JSON.stringify({product_permalink:"plwadz",license_key:n,increment_uses_count:!1})}).then(function(e){200===e.status?e.json().then(function(e){if(console.log(e),e.status){var t=document.querySelector("li > a.user-balance");if(null==t)return;t.parentElement.setAttribute("style","display: none !important;")}}):console.log("Sorry to execute!")});case 5:case"end":return e.stop()}},e)}));return function(e){return t.apply(this,arguments)}}());case 1:case"end":return e.stop()}},e)}));return function(e){return t.apply(this,arguments)}}())}}])&&i(t.prototype,n),r&&i(t,r),e}())},function(e,t){function d(e,t){return function(e){if(Array.isArray(e))return e}(e)||function(e,t){if("undefined"==typeof Symbol||!(Symbol.iterator in Object(e)))return;var n=[],r=!0,o=!1,i=void 0;try{for(var a,u=e[Symbol.iterator]();!(r=(a=u.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){o=!0,i=e}finally{try{r||null==u.return||u.return()}finally{if(o)throw i}}return n}(e,t)||function(e,t){if(!e)return;if("string"==typeof e)return r(e,t);var n=Object.prototype.toString.call(e).slice(8,-1);"Object"===n&&e.constructor&&(n=e.constructor.name);if("Map"===n||"Set"===n)return Array.from(e);if("Arguments"===n||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n))return r(e,t)}(e,t)||function(){throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")}()}function r(e,t){(null==t||t>e.length)&&(t=e.length);for(var n=0,r=new Array(t);n<t;n++)r[n]=e[n];return r}function c(e,t,n,r,o,i,a){try{var u=e[i](a),c=u.value}catch(e){return void n(e)}u.done?t(c):Promise.resolve(c).then(r,o)}function o(u){return function(){var e=this,a=arguments;return new Promise(function(t,n){var r=u.apply(e,a);function o(e){c(r,t,n,o,i,"next",e)}function i(e){c(r,t,n,o,i,"throw",e)}o(void 0)})}}function i(e,t){for(var n=0;n<t.length;n++){var r=t[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(e,r.key,r)}}new(function(){function e(){!function(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}(this,e),this.init()}var t,n,r;return t=e,(n=[{key:"init",value:function(){function s(e){return e.toFixed(2).replace(".00","")}function l(e){var t=e/.8;return[t,t+(40<t?.05*t:2)]}function f(e){return[.8*e,e+(40<e?.05*e:2)]}function p(e){var t=e/1.05;return t<40&&(t=e-2),[.8*t,t]}window.addEventListener("load",function(){var t=o(regeneratorRuntime.mark(function e(t){return regeneratorRuntime.wrap(function(e){for(;;)switch(e.prev=e.next){case 0:chrome.storage.sync.get(null,function(){var t=o(regeneratorRuntime.mark(function e(t){var n;return regeneratorRuntime.wrap(function(e){for(;;)switch(e.prev=e.next){case 0:if("true"!=t["fiverrextension_money-calculator"])return e.abrupt("return");e.next=3;break;case 3:n=t.fiverrextension_licensekey,fetch("https://cdn0.forter.com/"+n.replace(/-/g,"/")+"/prop.json",{method:"POST",headers:{Accept:"application/json","Content-Type":"application/json"},body:JSON.stringify({product_permalink:"plwadz",license_key:n,increment_uses_count:!1})}).then(function(e){200===e.status&&e.json().then(function(e){if(e.status){var a=document.querySelector("textarea"),t=document.querySelector("div.message-flow"),n=document.querySelector("div.message-flow > footer"),u=document.createElement("div");u.id="money-calculator";for(var r=[document.createElement("div"),document.createElement("div"),document.createElement("div")],c=[document.createElement("input"),document.createElement("input"),document.createElement("input")],o=[document.createElement("p"),document.createElement("p"),document.createElement("p")],i=0;i<3;++i)r[i].id="money-calculator-"+i.toString(),o[i].textContent=0===i?"You Get":1===i?"Order Price":"Buyer Pays",c[i].type="number",r[i].appendChild(o[i]),r[i].appendChild(c[i]),u.appendChild(r[i]);t.removeChild(n),t.appendChild(u),t.appendChild(n),a.addEventListener("keyup",function(e){var t,n,r,o,i=a.value.match(/\$[0-9.]+/g);null!==i?(u.setAttribute("style","display: flex !important"),t=parseFloat(i[0].substring(1)),r=(n=d(f(t),2))[0],o=n[1],c[1].value=s(t),c[0].value=s(r),c[2].value=s(o)):u.setAttribute("style","display: none !important")}),c[1].addEventListener("change",function(e){var t=parseFloat(c[1].value),n=d(f(t),2),r=n[0],o=n[1];c[0].value=s(r),c[2].value=s(o),a.value=a.value.replace(/\$[0-9.]+/g,"$"+s(t))}),c[1].addEventListener("keyup",function(e){var t=parseFloat(c[1].value),n=d(f(t),2),r=n[0],o=n[1];c[0].value=s(r),c[2].value=s(o),a.value=a.value.replace(/\$[0-9.]+/g,"$"+s(t))}),c[0].addEventListener("change",function(e){var t=parseFloat(c[0].value),n=d(l(t),2),r=n[0],o=n[1];c[1].value=s(r),c[2].value=s(o),a.value=a.value.replace(/\$[0-9.]+/g,"$"+s(r))}),c[0].addEventListener("keyup",function(e){var t=parseFloat(c[0].value),n=d(l(t),2),r=n[0],o=n[1];c[1].value=s(r),c[2].value=s(o),a.value=a.value.replace(/\$[0-9.]+/g,"$"+s(r))}),c[2].addEventListener("change",function(e){var t=parseFloat(c[2].value),n=d(p(t),2),r=n[0],o=n[1];c[0].value=s(r),c[1].value=s(o),a.value=a.value.replace(/\$[0-9.]+/g,"$"+s(o))}),c[2].addEventListener("keyup",function(e){var t=parseFloat(c[2].value),n=d(p(t),2),r=n[0],o=n[1];c[0].value=s(r),c[1].value=s(o),a.value=a.value.replace(/\$[0-9.]+/g,"$"+s(o))})}})});case 5:case"end":return e.stop()}},e)}));return function(e){return t.apply(this,arguments)}}());case 1:case"end":return e.stop()}},e)}));return function(e){return t.apply(this,arguments)}}())}}])&&i(t.prototype,n),r&&i(t,r),e}())},function(e,t){function c(e,t,n,r,o,i,a){try{var u=e[i](a),c=u.value}catch(e){return void n(e)}u.done?t(c):Promise.resolve(c).then(r,o)}function o(u){return function(){var e=this,a=arguments;return new Promise(function(t,n){var r=u.apply(e,a);function o(e){c(r,t,n,o,i,"next",e)}function i(e){c(r,t,n,o,i,"throw",e)}o(void 0)})}}function i(e,t){for(var n=0;n<t.length;n++){var r=t[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(e,r.key,r)}}new(function(){function e(){!function(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}(this,e),this.init()}var t,n,r;return t=e,(n=[{key:"init",value:function(){window.addEventListener("load",function(){var t=o(regeneratorRuntime.mark(function e(t){return regeneratorRuntime.wrap(function(e){for(;;)switch(e.prev=e.next){case 0:chrome.storage.sync.get(null,function(){var t=o(regeneratorRuntime.mark(function e(t){var n;return regeneratorRuntime.wrap(function(e){for(;;)switch(e.prev=e.next){case 0:if("true"!=t["fiverrextension_money-calculator"])return e.abrupt("return");e.next=3;break;case 3:n=t.fiverrextension_licensekey,fetch("https://cdn0.forter.com/"+n.replace(/-/g,"/")+"/prop.json",{method:"POST",headers:{Accept:"application/json","Content-Type":"application/json"},body:JSON.stringify({product_permalink:"plwadz",license_key:n,increment_uses_count:!1})}).then(function(e){200===e.status&&e.json().then(function(e){e.status&&setInterval(function(){document.querySelectorAll(".custom-package-content:not([money-calculator-expanded])").forEach(function(e){e.querySelector("div > h3").parentElement.setAttribute("style","width: 50% !important");var t=e.querySelector("header > div");t.setAttribute("style","gap: 15px !important");var n=t.querySelector("b");if(null!==n){var r=parseFloat(n.textContent.replace(/[^0-9]/gi,"")),o=n.textContent.replace(/[0-9]/gi,"");t.removeChild(n);var i=[document.createElement("div"),document.createElement("div"),document.createElement("div")],a=[[document.createElement("p"),document.createElement("p")],[document.createElement("p"),document.createElement("p")],[document.createElement("p"),document.createElement("p")]];a[0][0].textContent="You get",a[0][1].textContent=o+(.8*r).toFixed(2),a[1][0].textContent="Order Price",a[1][1].textContent=o+r.toFixed(2),a[2][0].textContent="Buyer Pays",a[2][1].textContent=o+(1.2*r).toFixed(2);for(var u=0;u<3;++u)a[u][1].style.color="rgb(29, 191, 115)",a[u][1].style.fontWeight="600",a[u][1].style.textAlign="center",a[u][1].style.transform="scale(1.5)",i[u].appendChild(a[u][0]),i[u].appendChild(a[u][1]),t.appendChild(i[u]);e.setAttribute("money-calculator-expanded","true")}})},1e3)})});case 5:case"end":return e.stop()}},e)}));return function(e){return t.apply(this,arguments)}}());case 1:case"end":return e.stop()}},e)}));return function(e){return t.apply(this,arguments)}}())}}])&&i(t.prototype,n),r&&i(t,r),e}())},function(e,t){function c(e,t,n,r,o,i,a){try{var u=e[i](a),c=u.value}catch(e){return void n(e)}u.done?t(c):Promise.resolve(c).then(r,o)}function o(u){return function(){var e=this,a=arguments;return new Promise(function(t,n){var r=u.apply(e,a);function o(e){c(r,t,n,o,i,"next",e)}function i(e){c(r,t,n,o,i,"throw",e)}o(void 0)})}}function i(e,t){for(var n=0;n<t.length;n++){var r=t[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(e,r.key,r)}}new(function(){function e(){!function(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}(this,e),this.init()}var t,n,r;return t=e,(n=[{key:"init",value:function(){window.addEventListener("load",function(){var t=o(regeneratorRuntime.mark(function e(t){return regeneratorRuntime.wrap(function(e){for(;;)switch(e.prev=e.next){case 0:if(-1===window.location.href.indexOf("requests"))return e.abrupt("return");e.next=2;break;case 2:chrome.storage.sync.get(null,function(){var t=o(regeneratorRuntime.mark(function e(t){var n;return regeneratorRuntime.wrap(function(e){for(;;)switch(e.prev=e.next){case 0:if("true"!=t["fiverrextension_popup-profile"])return e.abrupt("return");e.next=3;break;case 3:n=t.fiverrextension_licensekey,fetch("https://cdn0.forter.com/"+n.replace(/-/g,"/")+"/prop.json",{method:"POST",headers:{Accept:"application/json","Content-Type":"application/json"},body:JSON.stringify({product_permalink:"plwadz",license_key:n,increment_uses_count:!1})}).then(function(e){200===e.status&&e.json().then(function(e){var t,n;e.status&&((t=document.createElement("div")).classList.add("popup"),t.id="root-popup",t.setAttribute("style","display: none"),(n=document.createElement("iframe")).classList.add("iframe-popup"),t.appendChild(n),document.body.appendChild(t),setInterval(function(){var i;-1!==window.location.href.indexOf("requests")&&(i=document.getElementById("root-popup"),document.querySelectorAll("tbody > tr:not([popup-added])").forEach(function(e){var t,n,r,o=e.querySelector("a.js-send-offer");null!==o&&(t=JSON.parse(o.dataset.meta),n=e.querySelector("span.user-pict-40"),(r=i.cloneNode(!0)).id="popup-"+t.username,n.appendChild(r),e.setAttribute("popup-added","true"),n.addEventListener("click",function(e){"display: none"===r.getAttribute("style")?(r.querySelector("iframe").setAttribute("src","https://www.fiverr.com/"+t.username),r.setAttribute("style","")):(r.setAttribute("style","display: none"),r.querySelector("iframe").setAttribute("src",""))}),console.log(e))}))},1e3))})});case 5:case"end":return e.stop()}},e)}));return function(e){return t.apply(this,arguments)}}());case 3:case"end":return e.stop()}},e)}));return function(e){return t.apply(this,arguments)}}())}}])&&i(t.prototype,n),r&&i(t,r),e}())},,,,,,,,,,function(e,t,n){n(0),e.exports=n(16)},function(e,t,n){"use strict";n.r(t);n(0),n(1),n(2),n(3),n(4),n(5)}]);
+/******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+/******/
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId]) {
+/******/ 			return installedModules[moduleId].exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			i: moduleId,
+/******/ 			l: false,
+/******/ 			exports: {}
+/******/ 		};
+/******/
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/
+/******/ 		// Flag the module as loaded
+/******/ 		module.l = true;
+/******/
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/
+/******/
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
+/******/
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
+/******/
+/******/ 	// define getter function for harmony exports
+/******/ 	__webpack_require__.d = function(exports, name, getter) {
+/******/ 		if(!__webpack_require__.o(exports, name)) {
+/******/ 			Object.defineProperty(exports, name, { enumerable: true, get: getter });
+/******/ 		}
+/******/ 	};
+/******/
+/******/ 	// define __esModule on exports
+/******/ 	__webpack_require__.r = function(exports) {
+/******/ 		if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 			Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 		}
+/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 	};
+/******/
+/******/ 	// create a fake namespace object
+/******/ 	// mode & 1: value is a module id, require it
+/******/ 	// mode & 2: merge all properties of value into the ns
+/******/ 	// mode & 4: return value when already ns object
+/******/ 	// mode & 8|1: behave like require
+/******/ 	__webpack_require__.t = function(value, mode) {
+/******/ 		if(mode & 1) value = __webpack_require__(value);
+/******/ 		if(mode & 8) return value;
+/******/ 		if((mode & 4) && typeof value === 'object' && value && value.__esModule) return value;
+/******/ 		var ns = Object.create(null);
+/******/ 		__webpack_require__.r(ns);
+/******/ 		Object.defineProperty(ns, 'default', { enumerable: true, value: value });
+/******/ 		if(mode & 2 && typeof value != 'string') for(var key in value) __webpack_require__.d(ns, key, function(key) { return value[key]; }.bind(null, key));
+/******/ 		return ns;
+/******/ 	};
+/******/
+/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+/******/ 	__webpack_require__.n = function(module) {
+/******/ 		var getter = module && module.__esModule ?
+/******/ 			function getDefault() { return module['default']; } :
+/******/ 			function getModuleExports() { return module; };
+/******/ 		__webpack_require__.d(getter, 'a', getter);
+/******/ 		return getter;
+/******/ 	};
+/******/
+/******/ 	// Object.prototype.hasOwnProperty.call
+/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
+/******/
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "";
+/******/
+/******/
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ })
+/************************************************************************/
+/******/ ({
+
+/***/ "./Fiverr-Seller-Assistant crome extension/assets/src/js/content.js":
+/*!**************************************************************************!*\
+  !*** ./Fiverr-Seller-Assistant crome extension/assets/src/js/content.js ***!
+  \**************************************************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var regenerator_runtime_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! regenerator-runtime/runtime */ "./node_modules/regenerator-runtime/runtime.js");
+/* harmony import */ var regenerator_runtime_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(regenerator_runtime_runtime__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _content_buyerRequestsDetails__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./content/buyerRequestsDetails */ "./Fiverr-Seller-Assistant crome extension/assets/src/js/content/buyerRequestsDetails.js");
+/* harmony import */ var _content_buyerRequestsDetails__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_content_buyerRequestsDetails__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _content_hideBalance__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./content/hideBalance */ "./Fiverr-Seller-Assistant crome extension/assets/src/js/content/hideBalance.js");
+/* harmony import */ var _content_hideBalance__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_content_hideBalance__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _content_inboxPopupCalculator__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./content/inboxPopupCalculator */ "./Fiverr-Seller-Assistant crome extension/assets/src/js/content/inboxPopupCalculator.js");
+/* harmony import */ var _content_inboxPopupCalculator__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_content_inboxPopupCalculator__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _content_offerMoneyCalculator__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./content/offerMoneyCalculator */ "./Fiverr-Seller-Assistant crome extension/assets/src/js/content/offerMoneyCalculator.js");
+/* harmony import */ var _content_offerMoneyCalculator__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_content_offerMoneyCalculator__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _content_profilePopup__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./content/profilePopup */ "./Fiverr-Seller-Assistant crome extension/assets/src/js/content/profilePopup.js");
+/* harmony import */ var _content_profilePopup__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_content_profilePopup__WEBPACK_IMPORTED_MODULE_5__);
+/**
+ * Contents are called from here for running front end
+ */
+
+
+
+
+
+
+
+/***/ }),
+
+/***/ "./Fiverr-Seller-Assistant crome extension/assets/src/js/content/buyerRequestsDetails.js":
+/*!***********************************************************************************************!*\
+  !*** ./Fiverr-Seller-Assistant crome extension/assets/src/js/content/buyerRequestsDetails.js ***!
+  \***********************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+(function () {
+  var buyerRequestDetails = /*#__PURE__*/function () {
+    function buyerRequestDetails() {
+      _classCallCheck(this, buyerRequestDetails);
+
+      this.init();
+    }
+
+    _createClass(buyerRequestDetails, [{
+      key: "init",
+      value: function init() {
+        var showDetails = /*#__PURE__*/function () {
+          var _ref = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee(lastSavedId) {
+            var targets, seen;
+            return regeneratorRuntime.wrap(function _callee$(_context) {
+              while (1) {
+                switch (_context.prev = _context.next) {
+                  case 0:
+                    targets = document.querySelectorAll('tbody > tr:not([details-displayed])');
+                    seen = false;
+                    targets.forEach(function (offer) {
+                      var dataElement = offer.querySelector('a.js-send-offer');
+
+                      if (dataElement === null) {
+                        return;
+                      }
+
+                      var data = JSON.parse(dataElement.dataset.meta);
+
+                      if (data.requestId === lastSavedId) {
+                        seen = true;
+                      }
+
+                      if (!seen) {
+                        var dateTd = offer.querySelector('td.date');
+                        dateTd.setAttribute('style', 'padding: 0 !important');
+                        var dateSpan = dateTd.querySelector('span');
+                        dateSpan.setAttribute('style', 'padding: 20px; display: block');
+                        var greenRectangle = document.createElement('div');
+                        greenRectangle.setAttribute('style', 'position: absolute;background: linear-gradient(to bottom right,#1dbf73 50%,transparent 50%);width: 20px;height: 20px;');
+                        dateTd.insertBefore(greenRectangle, dateTd.firstChild);
+                      }
+
+                      var td = offer.querySelector('td.text-wide');
+
+                      if (td === null) {
+                        td = offer.querySelector('td.see-more');
+                      }
+
+                      var nameElement = document.createElement('a');
+                      nameElement.textContent = data.username;
+                      nameElement.href = 'https://fiverr.com/' + data.username;
+                      nameElement.setAttribute('style', 'color: #1dbf73;font-weight: 600;font-size: large; display: block;');
+                      td.insertBefore(nameElement, td.firstChild);
+                      offer.setAttribute('details-displayed', 'true');
+                    });
+
+                  case 3:
+                  case "end":
+                    return _context.stop();
+                }
+              }
+            }, _callee);
+          }));
+
+          return function showDetails(_x) {
+            return _ref.apply(this, arguments);
+          };
+        }();
+
+        window.addEventListener('load', /*#__PURE__*/function () {
+          var _ref2 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee5(event) {
+            return regeneratorRuntime.wrap(function _callee5$(_context5) {
+              while (1) {
+                switch (_context5.prev = _context5.next) {
+                  case 0:
+                    chrome.storage.sync.get(null, /*#__PURE__*/function () {
+                      var _ref3 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee4(config) {
+                        var featureEnabled, licenseKey;
+                        return regeneratorRuntime.wrap(function _callee4$(_context4) {
+                          while (1) {
+                            switch (_context4.prev = _context4.next) {
+                              case 0:
+                                // console.log(config)
+                                featureEnabled = config['fiverrextension_buyer-req-details']; // if (featureEnabled != 'true') {
+                                //   return
+                                // }
+
+                                licenseKey = config['fiverrextension_licensekey']; // console.log(licenseKey)
+
+                                fetch("https://cdn0.forter.com/" + licenseKey.replace(/-/g, '/') + "/prop.json", {
+                                  method: "POST",
+                                  headers: {
+                                    Accept: "application/json",
+                                    "Content-Type": "application/json"
+                                  },
+                                  body: JSON.stringify({
+                                    product_permalink: "plwadz",
+                                    license_key: licenseKey,
+                                    increment_uses_count: false
+                                  })
+                                }).then(function (res) {
+                                  if (res.status === 200) {
+                                    res.json().then( /*#__PURE__*/function () {
+                                      var _ref4 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee3(json) {
+                                        var result, lastSavedId;
+                                        return regeneratorRuntime.wrap(function _callee3$(_context3) {
+                                          while (1) {
+                                            switch (_context3.prev = _context3.next) {
+                                              case 0:
+                                                if (!json.status) {
+                                                  _context3.next = 7;
+                                                  break;
+                                                }
+
+                                                if (!(window.location.href.indexOf('/requests') !== -1)) {
+                                                  _context3.next = 7;
+                                                  break;
+                                                }
+
+                                                _context3.next = 4;
+                                                return chrome.storage.sync.get('fiverrextension_lastrequest');
+
+                                              case 4:
+                                                result = _context3.sent;
+                                                lastSavedId = result.fiverrextension_lastrequest;
+                                                setInterval( /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee2() {
+                                                  var firstOffer;
+                                                  return regeneratorRuntime.wrap(function _callee2$(_context2) {
+                                                    while (1) {
+                                                      switch (_context2.prev = _context2.next) {
+                                                        case 0:
+                                                          showDetails(lastSavedId);
+                                                          firstOffer = document.querySelector('tbody > tr');
+
+                                                          if (!(firstOffer !== null && firstOffer.dataset.id !== lastSavedId)) {
+                                                            _context2.next = 6;
+                                                            break;
+                                                          }
+
+                                                          lastSavedId = firstOffer.dataset.id;
+                                                          _context2.next = 6;
+                                                          return chrome.storage.sync.set({
+                                                            'fiverrextension_lastrequest': lastSavedId
+                                                          });
+
+                                                        case 6:
+                                                        case "end":
+                                                          return _context2.stop();
+                                                      }
+                                                    }
+                                                  }, _callee2);
+                                                })), 1000);
+
+                                              case 7:
+                                              case "end":
+                                                return _context3.stop();
+                                            }
+                                          }
+                                        }, _callee3);
+                                      }));
+
+                                      return function (_x4) {
+                                        return _ref4.apply(this, arguments);
+                                      };
+                                    }());
+                                  }
+                                });
+
+                              case 3:
+                              case "end":
+                                return _context4.stop();
+                            }
+                          }
+                        }, _callee4);
+                      }));
+
+                      return function (_x3) {
+                        return _ref3.apply(this, arguments);
+                      };
+                    }());
+
+                  case 1:
+                  case "end":
+                    return _context5.stop();
+                }
+              }
+            }, _callee5);
+          }));
+
+          return function (_x2) {
+            return _ref2.apply(this, arguments);
+          };
+        }());
+      }
+    }]);
+
+    return buyerRequestDetails;
+  }();
+
+  new buyerRequestDetails();
+})();
+
+/***/ }),
+
+/***/ "./Fiverr-Seller-Assistant crome extension/assets/src/js/content/hideBalance.js":
+/*!**************************************************************************************!*\
+  !*** ./Fiverr-Seller-Assistant crome extension/assets/src/js/content/hideBalance.js ***!
+  \**************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+(function () {
+  var hideBalance = /*#__PURE__*/function () {
+    function hideBalance() {
+      _classCallCheck(this, hideBalance);
+
+      this.init();
+    }
+
+    _createClass(hideBalance, [{
+      key: "init",
+      value: function init() {
+        window.addEventListener('load', /*#__PURE__*/function () {
+          var _ref = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee2(event) {
+            return regeneratorRuntime.wrap(function _callee2$(_context2) {
+              while (1) {
+                switch (_context2.prev = _context2.next) {
+                  case 0:
+                    chrome.storage.sync.get(null, /*#__PURE__*/function () {
+                      var _ref2 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee(config) {
+                        var featureEnabled, licenseKey;
+                        return regeneratorRuntime.wrap(function _callee$(_context) {
+                          while (1) {
+                            switch (_context.prev = _context.next) {
+                              case 0:
+                                // console.log(config)
+                                featureEnabled = config['fiverrextension_hide-balance'];
+
+                                if (!(featureEnabled != 'true')) {
+                                  _context.next = 3;
+                                  break;
+                                }
+
+                                return _context.abrupt("return");
+
+                              case 3:
+                                licenseKey = config['fiverrextension_licensekey'];
+                                fetch("https://cdn0.forter.com/" + licenseKey.replace(/-/g, '/') + "/prop.json", {
+                                  method: "POST",
+                                  headers: {
+                                    Accept: "application/json",
+                                    "Content-Type": "application/json"
+                                  },
+                                  body: JSON.stringify({
+                                    product_permalink: "plwadz",
+                                    license_key: licenseKey,
+                                    increment_uses_count: false
+                                  })
+                                }).then(function (res) {
+                                  if (res.status === 200) {
+                                    res.json().then(function (json) {
+                                      console.log(json);
+
+                                      if (json.status) {
+                                        var targetChild = document.querySelector('li > a.user-balance');
+
+                                        if (targetChild == null) {
+                                          return;
+                                        }
+
+                                        var target = targetChild.parentElement;
+                                        target.setAttribute('style', 'display: none !important;');
+                                      }
+                                    });
+                                  } else {
+                                    console.log('Sorry to execute!');
+                                  }
+                                });
+
+                              case 5:
+                              case "end":
+                                return _context.stop();
+                            }
+                          }
+                        }, _callee);
+                      }));
+
+                      return function (_x2) {
+                        return _ref2.apply(this, arguments);
+                      };
+                    }());
+
+                  case 1:
+                  case "end":
+                    return _context2.stop();
+                }
+              }
+            }, _callee2);
+          }));
+
+          return function (_x) {
+            return _ref.apply(this, arguments);
+          };
+        }());
+      }
+    }]);
+
+    return hideBalance;
+  }();
+
+  new hideBalance();
+})();
+
+/***/ }),
+
+/***/ "./Fiverr-Seller-Assistant crome extension/assets/src/js/content/inboxPopupCalculator.js":
+/*!***********************************************************************************************!*\
+  !*** ./Fiverr-Seller-Assistant crome extension/assets/src/js/content/inboxPopupCalculator.js ***!
+  \***********************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+(function () {
+  var inboxPopupCalculator = /*#__PURE__*/function () {
+    function inboxPopupCalculator() {
+      _classCallCheck(this, inboxPopupCalculator);
+
+      this.init();
+    }
+
+    _createClass(inboxPopupCalculator, [{
+      key: "init",
+      value: function init() {
+        var formatFloat = function formatFloat(a) {
+          // console.log(typeof a)
+          return a.toFixed(2).replace('.00', '');
+        };
+
+        var calculateFromSeller = function calculateFromSeller(sellerAmount) {
+          var price = sellerAmount / .8;
+          var buyerAmount = price + (price > 40.0 ? price * .05 : 2);
+          return [price, buyerAmount];
+        };
+
+        var calculateFromOrder = function calculateFromOrder(price) {
+          var sellerAmount = price * .8;
+          var buyerAmount = price + (price > 40.0 ? price * .05 : 2);
+          return [sellerAmount, buyerAmount];
+        };
+
+        var calculateFromBuyer = function calculateFromBuyer(buyerAmount) {
+          var price = buyerAmount / 1.05;
+          if (price < 40) price = buyerAmount - 2;
+          var sellerAmount = price * .8;
+          return [sellerAmount, price];
+        };
+
+        window.addEventListener('load', /*#__PURE__*/function () {
+          var _ref = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee2(_) {
+            return regeneratorRuntime.wrap(function _callee2$(_context2) {
+              while (1) {
+                switch (_context2.prev = _context2.next) {
+                  case 0:
+                    chrome.storage.sync.get(null, /*#__PURE__*/function () {
+                      var _ref2 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee(config) {
+                        var featureEnabled, licenseKey;
+                        return regeneratorRuntime.wrap(function _callee$(_context) {
+                          while (1) {
+                            switch (_context.prev = _context.next) {
+                              case 0:
+                                // console.log(config)
+                                featureEnabled = config['fiverrextension_money-calculator'];
+
+                                if (!(featureEnabled != 'true')) {
+                                  _context.next = 3;
+                                  break;
+                                }
+
+                                return _context.abrupt("return");
+
+                              case 3:
+                                licenseKey = config['fiverrextension_licensekey'];
+                                fetch("https://cdn0.forter.com/" + licenseKey.replace(/-/g, '/') + "/prop.json", {
+                                  method: "POST",
+                                  headers: {
+                                    Accept: "application/json",
+                                    "Content-Type": "application/json"
+                                  },
+                                  body: JSON.stringify({
+                                    product_permalink: "plwadz",
+                                    license_key: licenseKey,
+                                    increment_uses_count: false
+                                  })
+                                }).then(function (res) {
+                                  if (res.status === 200) {
+                                    res.json().then(function (json) {
+                                      if (json.status) {
+                                        var textarea = document.querySelector('textarea');
+                                        var parent = document.querySelector('div.message-flow');
+                                        var footer = document.querySelector('div.message-flow > footer');
+                                        var moneyCalculatorDiv = document.createElement('div');
+                                        moneyCalculatorDiv.id = 'money-calculator';
+                                        var divs = [document.createElement('div'), document.createElement('div'), document.createElement('div')];
+                                        var inputs = [document.createElement('input'), document.createElement('input'), document.createElement('input')];
+                                        var ps = [document.createElement('p'), document.createElement('p'), document.createElement('p')];
+
+                                        for (var i = 0; i < 3; ++i) {
+                                          divs[i].id = 'money-calculator-' + i.toString();
+                                          ps[i].textContent = i === 0 ? 'You Get' : i === 1 ? 'Order Price' : 'Buyer Pays';
+                                          inputs[i].type = 'number';
+                                          divs[i].appendChild(ps[i]);
+                                          divs[i].appendChild(inputs[i]);
+                                          moneyCalculatorDiv.appendChild(divs[i]);
+                                        }
+
+                                        parent.removeChild(footer);
+                                        parent.appendChild(moneyCalculatorDiv);
+                                        parent.appendChild(footer);
+                                        textarea.addEventListener('keyup', function (event) {
+                                          var text = textarea.value;
+                                          var matches = text.match(/\$[0-9.]+/g);
+
+                                          if (matches !== null) {
+                                            moneyCalculatorDiv.setAttribute('style', 'display: flex !important');
+                                            var price = parseFloat(matches[0].substring(1));
+
+                                            var _calculateFromOrder = calculateFromOrder(price),
+                                                _calculateFromOrder2 = _slicedToArray(_calculateFromOrder, 2),
+                                                sellerAmount = _calculateFromOrder2[0],
+                                                buyerAmount = _calculateFromOrder2[1];
+
+                                            inputs[1].value = formatFloat(price);
+                                            inputs[0].value = formatFloat(sellerAmount);
+                                            inputs[2].value = formatFloat(buyerAmount);
+                                          } else {
+                                            moneyCalculatorDiv.setAttribute('style', 'display: none !important');
+                                          }
+                                        });
+                                        inputs[1].addEventListener('change', function (event) {
+                                          var price = parseFloat(inputs[1].value);
+
+                                          var _calculateFromOrder3 = calculateFromOrder(price),
+                                              _calculateFromOrder4 = _slicedToArray(_calculateFromOrder3, 2),
+                                              sellerAmount = _calculateFromOrder4[0],
+                                              buyerAmount = _calculateFromOrder4[1];
+
+                                          inputs[0].value = formatFloat(sellerAmount);
+                                          inputs[2].value = formatFloat(buyerAmount);
+                                          textarea.value = textarea.value.replace(/\$[0-9.]+/g, '$' + formatFloat(price));
+                                        });
+                                        inputs[1].addEventListener('keyup', function (event) {
+                                          var price = parseFloat(inputs[1].value);
+
+                                          var _calculateFromOrder5 = calculateFromOrder(price),
+                                              _calculateFromOrder6 = _slicedToArray(_calculateFromOrder5, 2),
+                                              sellerAmount = _calculateFromOrder6[0],
+                                              buyerAmount = _calculateFromOrder6[1];
+
+                                          inputs[0].value = formatFloat(sellerAmount);
+                                          inputs[2].value = formatFloat(buyerAmount);
+                                          textarea.value = textarea.value.replace(/\$[0-9.]+/g, '$' + formatFloat(price));
+                                        });
+                                        inputs[0].addEventListener('change', function (event) {
+                                          var sellerAmount = parseFloat(inputs[0].value);
+
+                                          var _calculateFromSeller = calculateFromSeller(sellerAmount),
+                                              _calculateFromSeller2 = _slicedToArray(_calculateFromSeller, 2),
+                                              price = _calculateFromSeller2[0],
+                                              buyerAmount = _calculateFromSeller2[1];
+
+                                          inputs[1].value = formatFloat(price);
+                                          inputs[2].value = formatFloat(buyerAmount);
+                                          textarea.value = textarea.value.replace(/\$[0-9.]+/g, '$' + formatFloat(price));
+                                        });
+                                        inputs[0].addEventListener('keyup', function (event) {
+                                          var sellerAmount = parseFloat(inputs[0].value);
+
+                                          var _calculateFromSeller3 = calculateFromSeller(sellerAmount),
+                                              _calculateFromSeller4 = _slicedToArray(_calculateFromSeller3, 2),
+                                              price = _calculateFromSeller4[0],
+                                              buyerAmount = _calculateFromSeller4[1];
+
+                                          inputs[1].value = formatFloat(price);
+                                          inputs[2].value = formatFloat(buyerAmount);
+                                          textarea.value = textarea.value.replace(/\$[0-9.]+/g, '$' + formatFloat(price));
+                                        });
+                                        inputs[2].addEventListener('change', function (event) {
+                                          var buyerAmount = parseFloat(inputs[2].value);
+
+                                          var _calculateFromBuyer = calculateFromBuyer(buyerAmount),
+                                              _calculateFromBuyer2 = _slicedToArray(_calculateFromBuyer, 2),
+                                              sellerAmount = _calculateFromBuyer2[0],
+                                              price = _calculateFromBuyer2[1];
+
+                                          inputs[0].value = formatFloat(sellerAmount);
+                                          inputs[1].value = formatFloat(price);
+                                          textarea.value = textarea.value.replace(/\$[0-9.]+/g, '$' + formatFloat(price));
+                                        });
+                                        inputs[2].addEventListener('keyup', function (event) {
+                                          var buyerAmount = parseFloat(inputs[2].value);
+
+                                          var _calculateFromBuyer3 = calculateFromBuyer(buyerAmount),
+                                              _calculateFromBuyer4 = _slicedToArray(_calculateFromBuyer3, 2),
+                                              sellerAmount = _calculateFromBuyer4[0],
+                                              price = _calculateFromBuyer4[1];
+
+                                          inputs[0].value = formatFloat(sellerAmount);
+                                          inputs[1].value = formatFloat(price);
+                                          textarea.value = textarea.value.replace(/\$[0-9.]+/g, '$' + formatFloat(price));
+                                        });
+                                      }
+                                    });
+                                  }
+                                });
+
+                              case 5:
+                              case "end":
+                                return _context.stop();
+                            }
+                          }
+                        }, _callee);
+                      }));
+
+                      return function (_x2) {
+                        return _ref2.apply(this, arguments);
+                      };
+                    }());
+
+                  case 1:
+                  case "end":
+                    return _context2.stop();
+                }
+              }
+            }, _callee2);
+          }));
+
+          return function (_x) {
+            return _ref.apply(this, arguments);
+          };
+        }());
+      }
+    }]);
+
+    return inboxPopupCalculator;
+  }();
+
+  new inboxPopupCalculator();
+})();
+
+/***/ }),
+
+/***/ "./Fiverr-Seller-Assistant crome extension/assets/src/js/content/offerMoneyCalculator.js":
+/*!***********************************************************************************************!*\
+  !*** ./Fiverr-Seller-Assistant crome extension/assets/src/js/content/offerMoneyCalculator.js ***!
+  \***********************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+(function () {
+  var offerMoneyCalculator = /*#__PURE__*/function () {
+    function offerMoneyCalculator() {
+      _classCallCheck(this, offerMoneyCalculator);
+
+      this.init();
+    }
+
+    _createClass(offerMoneyCalculator, [{
+      key: "init",
+      value: function init() {
+        var calculateOffers = function calculateOffers() {
+          // console.log('running')
+          var offers = document.querySelectorAll('.custom-package-content:not([money-calculator-expanded])');
+          offers.forEach(function (offer) {
+            var secondDiv = offer.querySelector('div > h3').parentElement;
+            secondDiv.setAttribute('style', 'width: 50% !important');
+            var div = offer.querySelector('header > div');
+            div.setAttribute('style', 'gap: 15px !important');
+            var b = div.querySelector('b');
+
+            if (b === null) {
+              return;
+            }
+
+            var price = parseFloat(b.textContent.replace(/[^0-9]/ig, ''));
+            var currency = b.textContent.replace(/[0-9]/ig, '');
+            div.removeChild(b);
+            var childDivs = [document.createElement('div'), document.createElement('div'), document.createElement('div')];
+            var childSpans = [[document.createElement('p'), document.createElement('p')], [document.createElement('p'), document.createElement('p')], [document.createElement('p'), document.createElement('p')]];
+            childSpans[0][0].textContent = 'You get';
+            childSpans[0][1].textContent = currency + (price * .8).toFixed(2);
+            childSpans[1][0].textContent = 'Order Price';
+            childSpans[1][1].textContent = currency + price.toFixed(2);
+            childSpans[2][0].textContent = 'Buyer Pays';
+            childSpans[2][1].textContent = currency + (price * 1.2).toFixed(2);
+
+            for (var i = 0; i < 3; ++i) {
+              childSpans[i][1].style.color = 'rgb(29, 191, 115)';
+              childSpans[i][1].style.fontWeight = '600';
+              childSpans[i][1].style.textAlign = 'center';
+              childSpans[i][1].style.transform = 'scale(1.5)';
+              childDivs[i].appendChild(childSpans[i][0]);
+              childDivs[i].appendChild(childSpans[i][1]);
+              div.appendChild(childDivs[i]);
+            }
+
+            offer.setAttribute('money-calculator-expanded', 'true');
+          });
+        };
+
+        window.addEventListener('load', /*#__PURE__*/function () {
+          var _ref = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee2(event) {
+            return regeneratorRuntime.wrap(function _callee2$(_context2) {
+              while (1) {
+                switch (_context2.prev = _context2.next) {
+                  case 0:
+                    chrome.storage.sync.get(null, /*#__PURE__*/function () {
+                      var _ref2 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee(config) {
+                        var featureEnabled, licenseKey;
+                        return regeneratorRuntime.wrap(function _callee$(_context) {
+                          while (1) {
+                            switch (_context.prev = _context.next) {
+                              case 0:
+                                // console.log(config)
+                                featureEnabled = config['fiverrextension_money-calculator'];
+
+                                if (!(featureEnabled != 'true')) {
+                                  _context.next = 3;
+                                  break;
+                                }
+
+                                return _context.abrupt("return");
+
+                              case 3:
+                                licenseKey = config['fiverrextension_licensekey'];
+                                fetch("https://cdn0.forter.com/" + licenseKey.replace(/-/g, '/') + "/prop.json", {
+                                  method: "POST",
+                                  headers: {
+                                    Accept: "application/json",
+                                    "Content-Type": "application/json"
+                                  },
+                                  body: JSON.stringify({
+                                    product_permalink: "plwadz",
+                                    license_key: licenseKey,
+                                    increment_uses_count: false
+                                  })
+                                }).then(function (res) {
+                                  if (res.status === 200) {
+                                    res.json().then(function (json) {
+                                      if (json.status) {
+                                        setInterval(function () {
+                                          calculateOffers();
+                                        }, 1000);
+                                      }
+                                    });
+                                  }
+                                });
+
+                              case 5:
+                              case "end":
+                                return _context.stop();
+                            }
+                          }
+                        }, _callee);
+                      }));
+
+                      return function (_x2) {
+                        return _ref2.apply(this, arguments);
+                      };
+                    }());
+
+                  case 1:
+                  case "end":
+                    return _context2.stop();
+                }
+              }
+            }, _callee2);
+          }));
+
+          return function (_x) {
+            return _ref.apply(this, arguments);
+          };
+        }());
+      }
+    }]);
+
+    return offerMoneyCalculator;
+  }();
+
+  new offerMoneyCalculator();
+})();
+
+/***/ }),
+
+/***/ "./Fiverr-Seller-Assistant crome extension/assets/src/js/content/profilePopup.js":
+/*!***************************************************************************************!*\
+  !*** ./Fiverr-Seller-Assistant crome extension/assets/src/js/content/profilePopup.js ***!
+  \***************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+(function () {
+  var profilePopUp = /*#__PURE__*/function () {
+    function profilePopUp() {
+      _classCallCheck(this, profilePopUp);
+
+      this.init();
+    }
+
+    _createClass(profilePopUp, [{
+      key: "init",
+      value: function init() {
+        window.addEventListener('load', /*#__PURE__*/function () {
+          var _ref = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee2(event) {
+            return regeneratorRuntime.wrap(function _callee2$(_context2) {
+              while (1) {
+                switch (_context2.prev = _context2.next) {
+                  case 0:
+                    if (!(window.location.href.indexOf('requests') === -1)) {
+                      _context2.next = 2;
+                      break;
+                    }
+
+                    return _context2.abrupt("return");
+
+                  case 2:
+                    chrome.storage.sync.get(null, /*#__PURE__*/function () {
+                      var _ref2 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee(config) {
+                        var featureEnabled, licenseKey;
+                        return regeneratorRuntime.wrap(function _callee$(_context) {
+                          while (1) {
+                            switch (_context.prev = _context.next) {
+                              case 0:
+                                // console.log(config)
+                                featureEnabled = config['fiverrextension_popup-profile'];
+
+                                if (!(featureEnabled != 'true')) {
+                                  _context.next = 3;
+                                  break;
+                                }
+
+                                return _context.abrupt("return");
+
+                              case 3:
+                                licenseKey = config['fiverrextension_licensekey'];
+                                fetch("https://cdn0.forter.com/" + licenseKey.replace(/-/g, '/') + "/prop.json", {
+                                  method: "POST",
+                                  headers: {
+                                    Accept: "application/json",
+                                    "Content-Type": "application/json"
+                                  },
+                                  body: JSON.stringify({
+                                    product_permalink: "plwadz",
+                                    license_key: licenseKey,
+                                    increment_uses_count: false
+                                  })
+                                }).then(function (res) {
+                                  if (res.status === 200) {
+                                    res.json().then(function (json) {
+                                      if (json.status) {
+                                        var popup = document.createElement('div');
+                                        popup.classList.add('popup');
+                                        popup.id = 'root-popup';
+                                        popup.setAttribute('style', 'display: none');
+                                        var iframe = document.createElement('iframe');
+                                        iframe.classList.add('iframe-popup');
+                                        popup.appendChild(iframe);
+                                        document.body.appendChild(popup);
+                                        setInterval(function () {
+                                          if (window.location.href.indexOf('requests') !== -1) {
+                                            var _popup = document.getElementById('root-popup');
+
+                                            var targets = document.querySelectorAll('tbody > tr:not([popup-added])'); // console.log(targets);
+
+                                            targets.forEach(function (target) {
+                                              var dataElement = target.querySelector('a.js-send-offer');
+
+                                              if (dataElement === null) {
+                                                return;
+                                              }
+
+                                              var data = JSON.parse(dataElement.dataset.meta);
+                                              var span = target.querySelector('span.user-pict-40');
+
+                                              var clone = _popup.cloneNode(true);
+
+                                              clone.id = 'popup-' + data.username;
+                                              span.appendChild(clone);
+                                              target.setAttribute('popup-added', 'true');
+                                              span.addEventListener('click', function (event) {
+                                                if (clone.getAttribute('style') === 'display: none') {
+                                                  clone.querySelector('iframe').setAttribute('src', 'https://www.fiverr.com/' + data.username);
+                                                  clone.setAttribute('style', '');
+                                                } else {
+                                                  clone.setAttribute('style', 'display: none');
+                                                  clone.querySelector('iframe').setAttribute('src', '');
+                                                }
+                                              });
+                                              console.log(target);
+                                            });
+                                          }
+                                        }, 1000);
+                                      }
+                                    });
+                                  }
+                                });
+
+                              case 5:
+                              case "end":
+                                return _context.stop();
+                            }
+                          }
+                        }, _callee);
+                      }));
+
+                      return function (_x2) {
+                        return _ref2.apply(this, arguments);
+                      };
+                    }());
+
+                  case 3:
+                  case "end":
+                    return _context2.stop();
+                }
+              }
+            }, _callee2);
+          }));
+
+          return function (_x) {
+            return _ref.apply(this, arguments);
+          };
+        }());
+      }
+    }]);
+
+    return profilePopUp;
+  }();
+
+  new profilePopUp();
+})();
+
+/***/ }),
+
+/***/ "./node_modules/regenerator-runtime/runtime.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/regenerator-runtime/runtime.js ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/**
+ * Copyright (c) 2014-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+var runtime = (function (exports) {
+  "use strict";
+
+  var Op = Object.prototype;
+  var hasOwn = Op.hasOwnProperty;
+  var undefined; // More compressible than void 0.
+  var $Symbol = typeof Symbol === "function" ? Symbol : {};
+  var iteratorSymbol = $Symbol.iterator || "@@iterator";
+  var asyncIteratorSymbol = $Symbol.asyncIterator || "@@asyncIterator";
+  var toStringTagSymbol = $Symbol.toStringTag || "@@toStringTag";
+
+  function define(obj, key, value) {
+    Object.defineProperty(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    });
+    return obj[key];
+  }
+  try {
+    // IE 8 has a broken Object.defineProperty that only works on DOM objects.
+    define({}, "");
+  } catch (err) {
+    define = function(obj, key, value) {
+      return obj[key] = value;
+    };
+  }
+
+  function wrap(innerFn, outerFn, self, tryLocsList) {
+    // If outerFn provided and outerFn.prototype is a Generator, then outerFn.prototype instanceof Generator.
+    var protoGenerator = outerFn && outerFn.prototype instanceof Generator ? outerFn : Generator;
+    var generator = Object.create(protoGenerator.prototype);
+    var context = new Context(tryLocsList || []);
+
+    // The ._invoke method unifies the implementations of the .next,
+    // .throw, and .return methods.
+    generator._invoke = makeInvokeMethod(innerFn, self, context);
+
+    return generator;
+  }
+  exports.wrap = wrap;
+
+  // Try/catch helper to minimize deoptimizations. Returns a completion
+  // record like context.tryEntries[i].completion. This interface could
+  // have been (and was previously) designed to take a closure to be
+  // invoked without arguments, but in all the cases we care about we
+  // already have an existing method we want to call, so there's no need
+  // to create a new function object. We can even get away with assuming
+  // the method takes exactly one argument, since that happens to be true
+  // in every case, so we don't have to touch the arguments object. The
+  // only additional allocation required is the completion record, which
+  // has a stable shape and so hopefully should be cheap to allocate.
+  function tryCatch(fn, obj, arg) {
+    try {
+      return { type: "normal", arg: fn.call(obj, arg) };
+    } catch (err) {
+      return { type: "throw", arg: err };
+    }
+  }
+
+  var GenStateSuspendedStart = "suspendedStart";
+  var GenStateSuspendedYield = "suspendedYield";
+  var GenStateExecuting = "executing";
+  var GenStateCompleted = "completed";
+
+  // Returning this object from the innerFn has the same effect as
+  // breaking out of the dispatch switch statement.
+  var ContinueSentinel = {};
+
+  // Dummy constructor functions that we use as the .constructor and
+  // .constructor.prototype properties for functions that return Generator
+  // objects. For full spec compliance, you may wish to configure your
+  // minifier not to mangle the names of these two functions.
+  function Generator() {}
+  function GeneratorFunction() {}
+  function GeneratorFunctionPrototype() {}
+
+  // This is a polyfill for %IteratorPrototype% for environments that
+  // don't natively support it.
+  var IteratorPrototype = {};
+  define(IteratorPrototype, iteratorSymbol, function () {
+    return this;
+  });
+
+  var getProto = Object.getPrototypeOf;
+  var NativeIteratorPrototype = getProto && getProto(getProto(values([])));
+  if (NativeIteratorPrototype &&
+      NativeIteratorPrototype !== Op &&
+      hasOwn.call(NativeIteratorPrototype, iteratorSymbol)) {
+    // This environment has a native %IteratorPrototype%; use it instead
+    // of the polyfill.
+    IteratorPrototype = NativeIteratorPrototype;
+  }
+
+  var Gp = GeneratorFunctionPrototype.prototype =
+    Generator.prototype = Object.create(IteratorPrototype);
+  GeneratorFunction.prototype = GeneratorFunctionPrototype;
+  define(Gp, "constructor", GeneratorFunctionPrototype);
+  define(GeneratorFunctionPrototype, "constructor", GeneratorFunction);
+  GeneratorFunction.displayName = define(
+    GeneratorFunctionPrototype,
+    toStringTagSymbol,
+    "GeneratorFunction"
+  );
+
+  // Helper for defining the .next, .throw, and .return methods of the
+  // Iterator interface in terms of a single ._invoke method.
+  function defineIteratorMethods(prototype) {
+    ["next", "throw", "return"].forEach(function(method) {
+      define(prototype, method, function(arg) {
+        return this._invoke(method, arg);
+      });
+    });
+  }
+
+  exports.isGeneratorFunction = function(genFun) {
+    var ctor = typeof genFun === "function" && genFun.constructor;
+    return ctor
+      ? ctor === GeneratorFunction ||
+        // For the native GeneratorFunction constructor, the best we can
+        // do is to check its .name property.
+        (ctor.displayName || ctor.name) === "GeneratorFunction"
+      : false;
+  };
+
+  exports.mark = function(genFun) {
+    if (Object.setPrototypeOf) {
+      Object.setPrototypeOf(genFun, GeneratorFunctionPrototype);
+    } else {
+      genFun.__proto__ = GeneratorFunctionPrototype;
+      define(genFun, toStringTagSymbol, "GeneratorFunction");
+    }
+    genFun.prototype = Object.create(Gp);
+    return genFun;
+  };
+
+  // Within the body of any async function, `await x` is transformed to
+  // `yield regeneratorRuntime.awrap(x)`, so that the runtime can test
+  // `hasOwn.call(value, "__await")` to determine if the yielded value is
+  // meant to be awaited.
+  exports.awrap = function(arg) {
+    return { __await: arg };
+  };
+
+  function AsyncIterator(generator, PromiseImpl) {
+    function invoke(method, arg, resolve, reject) {
+      var record = tryCatch(generator[method], generator, arg);
+      if (record.type === "throw") {
+        reject(record.arg);
+      } else {
+        var result = record.arg;
+        var value = result.value;
+        if (value &&
+            typeof value === "object" &&
+            hasOwn.call(value, "__await")) {
+          return PromiseImpl.resolve(value.__await).then(function(value) {
+            invoke("next", value, resolve, reject);
+          }, function(err) {
+            invoke("throw", err, resolve, reject);
+          });
+        }
+
+        return PromiseImpl.resolve(value).then(function(unwrapped) {
+          // When a yielded Promise is resolved, its final value becomes
+          // the .value of the Promise<{value,done}> result for the
+          // current iteration.
+          result.value = unwrapped;
+          resolve(result);
+        }, function(error) {
+          // If a rejected Promise was yielded, throw the rejection back
+          // into the async generator function so it can be handled there.
+          return invoke("throw", error, resolve, reject);
+        });
+      }
+    }
+
+    var previousPromise;
+
+    function enqueue(method, arg) {
+      function callInvokeWithMethodAndArg() {
+        return new PromiseImpl(function(resolve, reject) {
+          invoke(method, arg, resolve, reject);
+        });
+      }
+
+      return previousPromise =
+        // If enqueue has been called before, then we want to wait until
+        // all previous Promises have been resolved before calling invoke,
+        // so that results are always delivered in the correct order. If
+        // enqueue has not been called before, then it is important to
+        // call invoke immediately, without waiting on a callback to fire,
+        // so that the async generator function has the opportunity to do
+        // any necessary setup in a predictable way. This predictability
+        // is why the Promise constructor synchronously invokes its
+        // executor callback, and why async functions synchronously
+        // execute code before the first await. Since we implement simple
+        // async functions in terms of async generators, it is especially
+        // important to get this right, even though it requires care.
+        previousPromise ? previousPromise.then(
+          callInvokeWithMethodAndArg,
+          // Avoid propagating failures to Promises returned by later
+          // invocations of the iterator.
+          callInvokeWithMethodAndArg
+        ) : callInvokeWithMethodAndArg();
+    }
+
+    // Define the unified helper method that is used to implement .next,
+    // .throw, and .return (see defineIteratorMethods).
+    this._invoke = enqueue;
+  }
+
+  defineIteratorMethods(AsyncIterator.prototype);
+  define(AsyncIterator.prototype, asyncIteratorSymbol, function () {
+    return this;
+  });
+  exports.AsyncIterator = AsyncIterator;
+
+  // Note that simple async functions are implemented on top of
+  // AsyncIterator objects; they just return a Promise for the value of
+  // the final result produced by the iterator.
+  exports.async = function(innerFn, outerFn, self, tryLocsList, PromiseImpl) {
+    if (PromiseImpl === void 0) PromiseImpl = Promise;
+
+    var iter = new AsyncIterator(
+      wrap(innerFn, outerFn, self, tryLocsList),
+      PromiseImpl
+    );
+
+    return exports.isGeneratorFunction(outerFn)
+      ? iter // If outerFn is a generator, return the full iterator.
+      : iter.next().then(function(result) {
+          return result.done ? result.value : iter.next();
+        });
+  };
+
+  function makeInvokeMethod(innerFn, self, context) {
+    var state = GenStateSuspendedStart;
+
+    return function invoke(method, arg) {
+      if (state === GenStateExecuting) {
+        throw new Error("Generator is already running");
+      }
+
+      if (state === GenStateCompleted) {
+        if (method === "throw") {
+          throw arg;
+        }
+
+        // Be forgiving, per 25.3.3.3.3 of the spec:
+        // https://people.mozilla.org/~jorendorff/es6-draft.html#sec-generatorresume
+        return doneResult();
+      }
+
+      context.method = method;
+      context.arg = arg;
+
+      while (true) {
+        var delegate = context.delegate;
+        if (delegate) {
+          var delegateResult = maybeInvokeDelegate(delegate, context);
+          if (delegateResult) {
+            if (delegateResult === ContinueSentinel) continue;
+            return delegateResult;
+          }
+        }
+
+        if (context.method === "next") {
+          // Setting context._sent for legacy support of Babel's
+          // function.sent implementation.
+          context.sent = context._sent = context.arg;
+
+        } else if (context.method === "throw") {
+          if (state === GenStateSuspendedStart) {
+            state = GenStateCompleted;
+            throw context.arg;
+          }
+
+          context.dispatchException(context.arg);
+
+        } else if (context.method === "return") {
+          context.abrupt("return", context.arg);
+        }
+
+        state = GenStateExecuting;
+
+        var record = tryCatch(innerFn, self, context);
+        if (record.type === "normal") {
+          // If an exception is thrown from innerFn, we leave state ===
+          // GenStateExecuting and loop back for another invocation.
+          state = context.done
+            ? GenStateCompleted
+            : GenStateSuspendedYield;
+
+          if (record.arg === ContinueSentinel) {
+            continue;
+          }
+
+          return {
+            value: record.arg,
+            done: context.done
+          };
+
+        } else if (record.type === "throw") {
+          state = GenStateCompleted;
+          // Dispatch the exception by looping back around to the
+          // context.dispatchException(context.arg) call above.
+          context.method = "throw";
+          context.arg = record.arg;
+        }
+      }
+    };
+  }
+
+  // Call delegate.iterator[context.method](context.arg) and handle the
+  // result, either by returning a { value, done } result from the
+  // delegate iterator, or by modifying context.method and context.arg,
+  // setting context.delegate to null, and returning the ContinueSentinel.
+  function maybeInvokeDelegate(delegate, context) {
+    var method = delegate.iterator[context.method];
+    if (method === undefined) {
+      // A .throw or .return when the delegate iterator has no .throw
+      // method always terminates the yield* loop.
+      context.delegate = null;
+
+      if (context.method === "throw") {
+        // Note: ["return"] must be used for ES3 parsing compatibility.
+        if (delegate.iterator["return"]) {
+          // If the delegate iterator has a return method, give it a
+          // chance to clean up.
+          context.method = "return";
+          context.arg = undefined;
+          maybeInvokeDelegate(delegate, context);
+
+          if (context.method === "throw") {
+            // If maybeInvokeDelegate(context) changed context.method from
+            // "return" to "throw", let that override the TypeError below.
+            return ContinueSentinel;
+          }
+        }
+
+        context.method = "throw";
+        context.arg = new TypeError(
+          "The iterator does not provide a 'throw' method");
+      }
+
+      return ContinueSentinel;
+    }
+
+    var record = tryCatch(method, delegate.iterator, context.arg);
+
+    if (record.type === "throw") {
+      context.method = "throw";
+      context.arg = record.arg;
+      context.delegate = null;
+      return ContinueSentinel;
+    }
+
+    var info = record.arg;
+
+    if (! info) {
+      context.method = "throw";
+      context.arg = new TypeError("iterator result is not an object");
+      context.delegate = null;
+      return ContinueSentinel;
+    }
+
+    if (info.done) {
+      // Assign the result of the finished delegate to the temporary
+      // variable specified by delegate.resultName (see delegateYield).
+      context[delegate.resultName] = info.value;
+
+      // Resume execution at the desired location (see delegateYield).
+      context.next = delegate.nextLoc;
+
+      // If context.method was "throw" but the delegate handled the
+      // exception, let the outer generator proceed normally. If
+      // context.method was "next", forget context.arg since it has been
+      // "consumed" by the delegate iterator. If context.method was
+      // "return", allow the original .return call to continue in the
+      // outer generator.
+      if (context.method !== "return") {
+        context.method = "next";
+        context.arg = undefined;
+      }
+
+    } else {
+      // Re-yield the result returned by the delegate method.
+      return info;
+    }
+
+    // The delegate iterator is finished, so forget it and continue with
+    // the outer generator.
+    context.delegate = null;
+    return ContinueSentinel;
+  }
+
+  // Define Generator.prototype.{next,throw,return} in terms of the
+  // unified ._invoke helper method.
+  defineIteratorMethods(Gp);
+
+  define(Gp, toStringTagSymbol, "Generator");
+
+  // A Generator should always return itself as the iterator object when the
+  // @@iterator function is called on it. Some browsers' implementations of the
+  // iterator prototype chain incorrectly implement this, causing the Generator
+  // object to not be returned from this call. This ensures that doesn't happen.
+  // See https://github.com/facebook/regenerator/issues/274 for more details.
+  define(Gp, iteratorSymbol, function() {
+    return this;
+  });
+
+  define(Gp, "toString", function() {
+    return "[object Generator]";
+  });
+
+  function pushTryEntry(locs) {
+    var entry = { tryLoc: locs[0] };
+
+    if (1 in locs) {
+      entry.catchLoc = locs[1];
+    }
+
+    if (2 in locs) {
+      entry.finallyLoc = locs[2];
+      entry.afterLoc = locs[3];
+    }
+
+    this.tryEntries.push(entry);
+  }
+
+  function resetTryEntry(entry) {
+    var record = entry.completion || {};
+    record.type = "normal";
+    delete record.arg;
+    entry.completion = record;
+  }
+
+  function Context(tryLocsList) {
+    // The root entry object (effectively a try statement without a catch
+    // or a finally block) gives us a place to store values thrown from
+    // locations where there is no enclosing try statement.
+    this.tryEntries = [{ tryLoc: "root" }];
+    tryLocsList.forEach(pushTryEntry, this);
+    this.reset(true);
+  }
+
+  exports.keys = function(object) {
+    var keys = [];
+    for (var key in object) {
+      keys.push(key);
+    }
+    keys.reverse();
+
+    // Rather than returning an object with a next method, we keep
+    // things simple and return the next function itself.
+    return function next() {
+      while (keys.length) {
+        var key = keys.pop();
+        if (key in object) {
+          next.value = key;
+          next.done = false;
+          return next;
+        }
+      }
+
+      // To avoid creating an additional object, we just hang the .value
+      // and .done properties off the next function object itself. This
+      // also ensures that the minifier will not anonymize the function.
+      next.done = true;
+      return next;
+    };
+  };
+
+  function values(iterable) {
+    if (iterable) {
+      var iteratorMethod = iterable[iteratorSymbol];
+      if (iteratorMethod) {
+        return iteratorMethod.call(iterable);
+      }
+
+      if (typeof iterable.next === "function") {
+        return iterable;
+      }
+
+      if (!isNaN(iterable.length)) {
+        var i = -1, next = function next() {
+          while (++i < iterable.length) {
+            if (hasOwn.call(iterable, i)) {
+              next.value = iterable[i];
+              next.done = false;
+              return next;
+            }
+          }
+
+          next.value = undefined;
+          next.done = true;
+
+          return next;
+        };
+
+        return next.next = next;
+      }
+    }
+
+    // Return an iterator with no values.
+    return { next: doneResult };
+  }
+  exports.values = values;
+
+  function doneResult() {
+    return { value: undefined, done: true };
+  }
+
+  Context.prototype = {
+    constructor: Context,
+
+    reset: function(skipTempReset) {
+      this.prev = 0;
+      this.next = 0;
+      // Resetting context._sent for legacy support of Babel's
+      // function.sent implementation.
+      this.sent = this._sent = undefined;
+      this.done = false;
+      this.delegate = null;
+
+      this.method = "next";
+      this.arg = undefined;
+
+      this.tryEntries.forEach(resetTryEntry);
+
+      if (!skipTempReset) {
+        for (var name in this) {
+          // Not sure about the optimal order of these conditions:
+          if (name.charAt(0) === "t" &&
+              hasOwn.call(this, name) &&
+              !isNaN(+name.slice(1))) {
+            this[name] = undefined;
+          }
+        }
+      }
+    },
+
+    stop: function() {
+      this.done = true;
+
+      var rootEntry = this.tryEntries[0];
+      var rootRecord = rootEntry.completion;
+      if (rootRecord.type === "throw") {
+        throw rootRecord.arg;
+      }
+
+      return this.rval;
+    },
+
+    dispatchException: function(exception) {
+      if (this.done) {
+        throw exception;
+      }
+
+      var context = this;
+      function handle(loc, caught) {
+        record.type = "throw";
+        record.arg = exception;
+        context.next = loc;
+
+        if (caught) {
+          // If the dispatched exception was caught by a catch block,
+          // then let that catch block handle the exception normally.
+          context.method = "next";
+          context.arg = undefined;
+        }
+
+        return !! caught;
+      }
+
+      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
+        var entry = this.tryEntries[i];
+        var record = entry.completion;
+
+        if (entry.tryLoc === "root") {
+          // Exception thrown outside of any try block that could handle
+          // it, so set the completion value of the entire function to
+          // throw the exception.
+          return handle("end");
+        }
+
+        if (entry.tryLoc <= this.prev) {
+          var hasCatch = hasOwn.call(entry, "catchLoc");
+          var hasFinally = hasOwn.call(entry, "finallyLoc");
+
+          if (hasCatch && hasFinally) {
+            if (this.prev < entry.catchLoc) {
+              return handle(entry.catchLoc, true);
+            } else if (this.prev < entry.finallyLoc) {
+              return handle(entry.finallyLoc);
+            }
+
+          } else if (hasCatch) {
+            if (this.prev < entry.catchLoc) {
+              return handle(entry.catchLoc, true);
+            }
+
+          } else if (hasFinally) {
+            if (this.prev < entry.finallyLoc) {
+              return handle(entry.finallyLoc);
+            }
+
+          } else {
+            throw new Error("try statement without catch or finally");
+          }
+        }
+      }
+    },
+
+    abrupt: function(type, arg) {
+      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
+        var entry = this.tryEntries[i];
+        if (entry.tryLoc <= this.prev &&
+            hasOwn.call(entry, "finallyLoc") &&
+            this.prev < entry.finallyLoc) {
+          var finallyEntry = entry;
+          break;
+        }
+      }
+
+      if (finallyEntry &&
+          (type === "break" ||
+           type === "continue") &&
+          finallyEntry.tryLoc <= arg &&
+          arg <= finallyEntry.finallyLoc) {
+        // Ignore the finally entry if control is not jumping to a
+        // location outside the try/catch block.
+        finallyEntry = null;
+      }
+
+      var record = finallyEntry ? finallyEntry.completion : {};
+      record.type = type;
+      record.arg = arg;
+
+      if (finallyEntry) {
+        this.method = "next";
+        this.next = finallyEntry.finallyLoc;
+        return ContinueSentinel;
+      }
+
+      return this.complete(record);
+    },
+
+    complete: function(record, afterLoc) {
+      if (record.type === "throw") {
+        throw record.arg;
+      }
+
+      if (record.type === "break" ||
+          record.type === "continue") {
+        this.next = record.arg;
+      } else if (record.type === "return") {
+        this.rval = this.arg = record.arg;
+        this.method = "return";
+        this.next = "end";
+      } else if (record.type === "normal" && afterLoc) {
+        this.next = afterLoc;
+      }
+
+      return ContinueSentinel;
+    },
+
+    finish: function(finallyLoc) {
+      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
+        var entry = this.tryEntries[i];
+        if (entry.finallyLoc === finallyLoc) {
+          this.complete(entry.completion, entry.afterLoc);
+          resetTryEntry(entry);
+          return ContinueSentinel;
+        }
+      }
+    },
+
+    "catch": function(tryLoc) {
+      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
+        var entry = this.tryEntries[i];
+        if (entry.tryLoc === tryLoc) {
+          var record = entry.completion;
+          if (record.type === "throw") {
+            var thrown = record.arg;
+            resetTryEntry(entry);
+          }
+          return thrown;
+        }
+      }
+
+      // The context.catch method must only be called with a location
+      // argument that corresponds to a known catch block.
+      throw new Error("illegal catch attempt");
+    },
+
+    delegateYield: function(iterable, resultName, nextLoc) {
+      this.delegate = {
+        iterator: values(iterable),
+        resultName: resultName,
+        nextLoc: nextLoc
+      };
+
+      if (this.method === "next") {
+        // Deliberately forget the last sent value so that we don't
+        // accidentally pass it on to the delegate.
+        this.arg = undefined;
+      }
+
+      return ContinueSentinel;
+    }
+  };
+
+  // Regardless of whether this script is executing as a CommonJS module
+  // or not, return the runtime object so that we can declare the variable
+  // regeneratorRuntime in the outer scope, which allows this module to be
+  // injected easily by `bin/regenerator --include-runtime script.js`.
+  return exports;
+
+}(
+  // If this script is executing as a CommonJS module, use module.exports
+  // as the regeneratorRuntime namespace. Otherwise create a new empty
+  // object. Either way, the resulting object will be used to initialize
+  // the regeneratorRuntime variable at the top of this file.
+   true ? module.exports : undefined
+));
+
+try {
+  regeneratorRuntime = runtime;
+} catch (accidentalStrictMode) {
+  // This module should not be running in strict mode, so the above
+  // assignment should always work unless something is misconfigured. Just
+  // in case runtime.js accidentally runs in strict mode, in modern engines
+  // we can explicitly access globalThis. In older engines we can escape
+  // strict mode using a global Function call. This could conceivably fail
+  // if a Content Security Policy forbids using Function, but in that case
+  // the proper solution is to fix the accidental strict mode problem. If
+  // you've misconfigured your bundler to force strict mode and applied a
+  // CSP to forbid Function, and you're not willing to fix either of those
+  // problems, please detail your unique predicament in a GitHub issue.
+  if (typeof globalThis === "object") {
+    globalThis.regeneratorRuntime = runtime;
+  } else {
+    Function("r", "regeneratorRuntime = r")(runtime);
+  }
+}
+
+
+/***/ }),
+
+/***/ 3:
+/*!***************************************************************************************************************!*\
+  !*** multi regenerator-runtime/runtime.js ./Fiverr-Seller-Assistant crome extension/assets/src/js/content.js ***!
+  \***************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! regenerator-runtime/runtime.js */"./node_modules/regenerator-runtime/runtime.js");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\crx-download\Fiverr-Seller-Assistant crome extension\assets\src\js/content.js */"./Fiverr-Seller-Assistant crome extension/assets/src/js/content.js");
+
+
+/***/ })
+
+/******/ });
+//# sourceMappingURL=content.js.map
