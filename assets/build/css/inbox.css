@@ -1,0 +1,18 @@
+#money-calculator {
+  display: none; }
+
+.message-action-bar #money-calculator-edit-button .icn.calculator {
+  width: 10px; }
+
+#money-calculator-edit-button svg .money-calculator-svg-fill {
+  fill: #777; }
+
+#money-calculator-edit-button svg:hover .money-calculator-svg-fill {
+  fill: #00B605; }
+
+.money-calculator-svg-fill {
+  fill-rule: evenodd;
+  clip-rule: evenodd; }
+
+
+/*# sourceMappingURL=inbox.css.map*/
