@@ -1,8 +1,1 @@
-li > a.user-balance {
-  display: none; }
-
-li.d-block > a.user-balance {
-  display: block; }
-
-
-/*# sourceMappingURL=main.css.map*/
+li>a.user-balance{display:none}li.d-block>a.user-balance{display:block}
