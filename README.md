@@ -19,8 +19,19 @@ You need to follow some steps below
 - Now click on **Extensons icon** which is located on browser's top bar. Click on **Fiverr Assistant** and standby until a **Activate License** popup will apear.
 - If you have a licence key already, put it on here and click **Verify Licence**. If your licence key is valid, you will redirect to a new functional popup where you can select what you need.
 
+## Screenshots
+Calculating custom offers payments and sellers profit.
+![Offer Amount calculation](https://ibb.co/WWcvNPd "Offer Amount calculation")
 
-If you have any advice or tips or request, please create a **pull request** or **Issue** here. I'm always focus on it. Also you can contact me on [Facebook](https://web.facebook.com/mahmudremal)
+
+Order comission Calculator apear on chat box.
+![Money Converter](https://ibb.co/pKmxw00 "Calculator")
+
+
+Functional popup where you can control your services.
+![Main PopUp](https://ibb.co/k5BfLtH "POPup")
+
+If you have any advice or tips or request ot add new features, please create a **pull request** or **Issue** here. I'm always focus on it. Also you can contact me on [Facebook](https://web.facebook.com/mahmudremal)
 
 
 Thank you
