@@ -19,4 +19,8 @@ You need to follow some steps below
 - Now click on **Extensons icon** which is located on browser's top bar. Click on **Fiverr Assistant** and standby until a **Activate License** popup will apear.
 - If you have a licence key already, put it on here and click **Verify Licence**. If your licence key is valid, you will redirect to a new functional popup where you can select what you need.
 
-``Thank you``
+
+If you have any advice or tips or request, please create a **pull request** or **Issue** here. I'm always focus on it. Also you can contact me on [Facebook](https://web.facebook.com/mahmudremal)
+
+
+Thank you
