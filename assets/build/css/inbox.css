@@ -1,1 +1,93 @@
-.message-action-bar #money-calculator-edit-button .icn.calculator{width:10px}#money-calculator-edit-button svg .money-calculator-svg-fill{fill:#777}#money-calculator-edit-button svg:hover .money-calculator-svg-fill{fill:#00b605}.money-calculator-svg-fill{fill-rule:evenodd;clip-rule:evenodd}#money-calculator{margin:auto;width:auto;width:-webkit-fill-available;max-width:100%;height:auto;height:-webkit-fill-available;max-height:100%;background:rgba(51,51,51,.7215686274509804);padding:10px 20px;position:absolute;z-index:9;top:0;left:0;opacity:0;visibility:hidden;overflow:hidden;transition:all .2s ease}#money-calculator .custom_offer-package{transition:transform .3s ease;transform:translate(-50%,-20%)}#money-calculator.visible{opacity:1;visibility:visible}#money-calculator.visible .custom_offer-package{transform:none}#money-calculator>div{margin:auto;width:auto;width:-webkit-fill-available;max-width:90%;color:#fff}#money-calculator>div input{width:100%;background:none;background:hsla(0,0%,100%,.7294117647058823);color:#333;font-weight:600;letter-spacing:3px;height:50px;font-size:30px;padding:15px 5px 5px 10px}#money-calculator .custom_offer-package{padding:10px;box-shadow:0 0 10px #4c4c4c;background:#fff;border-radius:5px}#money-calculator fieldset{position:relative;display:block;margin:20px auto auto}#money-calculator fieldset>legend{color:#333;background:#fff;border:.5px solid #ccc;padding:0 15px;position:absolute;top:-50%;left:20px;transform:translate(-10px,15px);line-height:20px;box-shadow:0 0 3px #ccc}@media (min-width:600px){.extension-offer-title-width{width:50%}}
+.message-action-bar #money-calculator-edit-button .icn.calculator {
+  width: 10px; }
+
+#money-calculator-edit-button svg .money-calculator-svg-fill {
+  fill: #777; }
+
+#money-calculator-edit-button svg:hover .money-calculator-svg-fill {
+  fill: #00B605; }
+
+.money-calculator-svg-fill {
+  fill-rule: evenodd;
+  clip-rule: evenodd; }
+
+#money-calculator {
+  margin: auto;
+  width: auto;
+  width: -webkit-fill-available;
+  max-width: 100%;
+  height: auto;
+  height: -webkit-fill-available;
+  max-height: 100%;
+  background: #333333b8;
+  padding: 10px 20px 10px 20px;
+  position: absolute;
+  z-index: 9;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+  transition: all .2s ease; }
+
+#money-calculator .custom_offer-package {
+  transition: transform .3s ease;
+  transform: translate(-50%, -20%); }
+
+#money-calculator.visible {
+  opacity: 1;
+  visibility: visible; }
+
+#money-calculator.visible .custom_offer-package {
+  transform: none; }
+
+#money-calculator > div {
+  margin: auto;
+  width: auto;
+  width: -webkit-fill-available;
+  max-width: 90%;
+  color: #fff; }
+
+#money-calculator > div input {
+  width: 100%;
+  background: none;
+  background: #ffffffba;
+  color: #333;
+  font-weight: 600;
+  letter-spacing: 3px;
+  height: 50px;
+  font-size: 30px;
+  padding: 5px;
+  padding-left: 10px;
+  padding-top: 15px; }
+
+#money-calculator .custom_offer-package {
+  padding: 10px;
+  box-shadow: 0 0 10px #4c4c4c;
+  background: #fff;
+  border-radius: 5px; }
+
+#money-calculator fieldset {
+  position: relative;
+  display: block;
+  margin: auto;
+  margin-top: 20px; }
+
+#money-calculator fieldset > legend {
+  color: #333;
+  background: #fff;
+  border: 0.5px solid #ccc;
+  padding: 0 15px 0 15px;
+  position: absolute;
+  top: -50%;
+  left: 20px;
+  transform: translate(-10px, 15px);
+  line-height: 20px;
+  box-shadow: 0 0 3px #ccc; }
+
+@media (min-width: 600px) {
+  .extension-offer-title-width {
+    width: 50%; } }
+
+
+/*# sourceMappingURL=inbox.css.map*/
