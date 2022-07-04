@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack:///./Fiverr-Seller-Assistant crome extension/assets/src/sass/users.scss"],"names":[],"mappings":"AAEA;EACE,cAAc;EAAC,gBAAgB;EAAC,gBAAgB;EAAE,cAAc","file":"css/users.css","sourcesContent":["// @import \"essentials\";\n\n.extension-requestpage-username {\n  color: #1dbf73;font-weight: 600;font-size: large; display: block;\n}\n"],"sourceRoot":""}
